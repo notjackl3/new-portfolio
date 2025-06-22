@@ -100,3 +100,16 @@ $(document).ready(function() {
     { offset: "80%" }
   );
 });
+
+document.querySelectorAll(".read-more").forEach(button => {
+  button.addEventListener("click", () => {
+    const moreText = button.previousElementSibling;
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      button.textContent = "[Read less]";
+    } else {
+      moreText.style.display = "none";
+      button.textContent = "[Read more]";
+    }
+  });
+});
