@@ -20,6 +20,17 @@
   --font-inter: "Inter";
 }
 
+/* :root {
+  --color-text: #000;
+  --color-hidden: #888888;
+  --color-primary: #4169e1;
+  --color-primary-light: #5b7de3;
+  --color-secondary: #e8e8e8;
+  --color-bg: #fff;
+
+  --font-inter: "Inter";
+} */
+
 body {
   background-color: var(--color-secondary);
 }
@@ -71,7 +82,7 @@ nav ul li a {
   transition: 0.2s ease;
 }
 .hoverable:hover {
-  color: #fff;
+  color: var(--color-text);
   background-color: var(--color-secondary);
   padding: 0px;
 }
@@ -108,7 +119,7 @@ nav ul li a {
   box-sizing: border-box; 
 }
 .project {
-  border: 1px solid #fff;
+  border: 1px solid var(--color-text);
   padding: 0;
   background-color: transparent;
   display: flex;
@@ -139,10 +150,10 @@ nav ul li a {
 .project-divider {
   height: 1px;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--color-text);
 }
 .project-description {
-  color: #fff;
+  color: var(--color-text);
   font-size: 1rem;
   padding: 1rem;
   padding-bottom: 0.5rem;
@@ -173,11 +184,11 @@ nav ul li a {
   bottom: -2px;
   height: 2px;
   width: 0;
-  background-color: #fff;
+  background-color: var(--color-text);
   transition: width 0.3s ease;
 }
 .project-link:hover {
-  color: #fff;
+  color: var(--color-text);
 }
 .project-link:hover::after {
   width: 100%;
@@ -185,7 +196,7 @@ nav ul li a {
 
 .project:hover .project-title,
 .project:hover .project-description {
-  color: #fff;
+  color: var(--color-text);
 }
 
 .journey-section {
@@ -193,7 +204,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #252933;
+  background-color: var(--color-secondary);
   padding: 2rem 2rem;
   padding-bottom: 0 !important;
   position: relative;
@@ -233,7 +244,7 @@ nav ul li a {
 }
 .timeline-date {
   font-size: 1.1rem;
-  color: #fff;
+  color: var(--color-text);
 }
 .timeline-date.timeline-project {
   color: var(--color-primary-light);
@@ -246,7 +257,7 @@ nav ul li a {
 
 .important {
   font-weight: 300;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .read-more {
