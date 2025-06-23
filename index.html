@@ -15,9 +15,9 @@
         </div>
         <ul>
             <li> <a style="color: var(--color-primary)">#<a class="hoverable" href="#projects" onclick="scrollToTop(event, 'projects')" style="padding-left: 0px;">my-projects</a></a> </li>
+            <li> <a style="color: var(--color-primary)">#<a class="hoverable" href="#contact" onclick="scrollToCenter(event, 'contact')" style="padding-left: 0px;">my-contacts</a></a> </li>
             <li> <a style="color: var(--color-primary)">#<a class="hoverable" href="#journey" onclick="scrollToTop(event, 'journey')" style="padding-left: 0px;">my-journey</a></a> </li>
             <li> <a style="color: var(--color-primary)">#<a class="hoverable" href="assets/resume.pdf" download="Jack Le Resume.pdf" style="padding-left: 0px;">my-resume</a></a> </li>
-            <li> <a style="color: var(--color-primary)">#<a class="hoverable" href="#contact" style="padding-left: 0px;">contact-me</a></a> </li>
         </ul>
         <div class="hamburger">
             <span class="line"></span>
@@ -32,9 +32,9 @@
             <h1 class="anim anim-typewriter2 anim-glow">i'm a <span class="select-me anim-oops">human </span>cool
                 software developer</h1>
             <a style="margin-top: 40px;" class="button intro-wait unselectable" href="#projects" onclick="scrollToTop(event, 'projects')">view my projects</a>
+            <a class="button intro-wait unselectable" href="#contact" onclick="scrollToCenter(event, 'contact')">get my contacts</a>
             <a class="button intro-wait unselectable" href="#journey" onclick="scrollToTop(event, 'journey')">see my journey</a>
             <a class="button intro-wait unselectable" style="color: #fff; border-color: #fff;" href="assets/resume.pdf" download="Jack Le Resume.pdf">check my resume</a>
-            <a class="button intro-wait unselectable" href="#contact">contact me</a>
             <br>
             <!-- <p style="width: 450px;" class="skills intro-wait unselectable">python, django, flask, java, javascript, html, css, bootstrap, sql, postgresql, supabase, aws, git</p>
             <p class="skills intro-wait unselectable">latex, tailwind, redis, gcp, power app/automate </p> -->
@@ -47,8 +47,8 @@
             </div>
             <div style="width: 320px; margin-bottom: 10px;">
                 <p style="margin-left: 0; line-height: 1.3; color: var(--color-hidden)"
-                    class="skills intro-wait unselectable"><a style="margin-right: 0; color: var(--color-primary)"
-                        class="skills intro-wait unselectable">i am good at: </a>latex, tailwind, redis, gcp, power
+                    class="skills intro-wait unselectable"><a style="margin-right: 0; color: var(--color-primary-light)"
+                        class="skills intro-wait unselectable">i am good at: </a>latex, tailwind, redis, google cloud platform, render, openai api, power
                     app/automate </p>
             </div>
         </div>
@@ -69,7 +69,9 @@
             <h2 class="project-title">Organese</h2>
             <div class="project-divider"></div>
             <p class="project-description">A scheduling app to enable users to create personalized timetables, share booking links, and manage their time more efficiently.</p>
-            <a href="#organese" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'organese')"><u>story behind this</u></a>
+            <div style="display: flex; justify-content: center;">
+              <a href="#organese" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'organese')">story behind this</a>
+            </div>
         </div>
         <div class="project">
             <div class="project-img-container">
@@ -79,7 +81,9 @@
             <h2 class="project-title">Job-Hunter</h2>
             <div class="project-divider"></div>
             <p class="project-description">A job search app to hunt for latest jobs posts, analyse market demand, highlight key skills, and write tailored cover letters.</p>
-            <a href="#job-hunter" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'job-hunter')"><u>story behind this</u></a>
+            <div style="display: flex; justify-content: center;">
+              <a href="#job-hunter" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'job-hunter')">story behind this</a>
+            </div>
         </div>
         <div class="project">
             <div class="project-img-container">
@@ -89,7 +93,9 @@
             <h2 class="project-title">SOP-ify</h2>
             <div class="project-divider"></div>
             <p class="project-description">A Flask application to track real-time changes between two Word documents.</p>
-            <a href="#sop-ify" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'sop-ify')"><u>story behind this</u></a>
+            <div style="display: flex; justify-content: center;">
+              <a href="#sop-ify" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'sop-ify')">story behind this</a>
+            </div>
         </div>
         <div class="project">
             <div class="project-img-container">
@@ -99,7 +105,9 @@
             <h2 class="project-title">Youtube as a Service</h2>
             <div class="project-divider"></div>
             <p class="project-description">An experimental project to compresses any files into Youtube videos. Users can reconstruct uploaded files with 99.9% accuracy.</p>
-            <a href="#youtube-as-a-service" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'youtube-as-a-service')"><u>story behind this</u></a>
+            <div style="display: flex; justify-content: center;">
+              <a href="#youtube-as-a-service" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'youtube-as-a-service')">story behind this</a>
+            </div>
         </div>
         <div class="project">
             <div class="project-img-container">
@@ -109,16 +117,28 @@
             <h2 class="project-title">Resume Builder</h2>
             <div class="project-divider"></div>
             <p class="project-description">A resume optimization tool to tailor resumes that match job descriptions, produce keyword-optimized PDFs for ATS scoring.</p>
-            <a href="#resume-builder" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'resume-builder')"><u>story behind this</u></a>
+            <div style="display: flex; justify-content: center;">
+              <a href="#resume-builder" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'resume-builder')">story behind this</a>
+            </div>
         </div>
+    </section>
+
+    <section id="contact" class="footer-section">
+      <p class="marker">@<a href="https://www.instagram.com/notjackl3/" class="hoverable">my-instagram</a></p>
+      <p class="marker">@<a href="https://www.github.com/notjackl3" class="hoverable">my-github</a></p>
+      <p class="marker">@<a href="https://www.linkedin.com/in/huu-an-duc-le/" class="hoverable">my-linkedin</a></p>
+      <p class="marker">@<a href="mailto:huuanducle@gmail.com" class="hoverable">my-email</a></p>
     </section>
 
     <div class="journey">
       <div class="sub-journey">
-        <div style="display: flex; background-color: var(--color-secondary); margin-top: 100px;">
+        <div style="display: flex; background-color: var(--color-secondary); margin-top: 50px;">
           <h1> <a style="margin-left: 20px; color: var(--color-primary)">#<a style="padding-left: 0px;">programming-journey</a></a>
           </h1>
-          <h1 style="margin-left: 20px; color: var(--color-primary)">─────</h1>
+          <h1 style="margin-left: 20px; color: var(--color-primary)">
+            <span class="long-line">─────</span>
+            <span class="short-line">───</span>
+          </h1>
         </div>
         <section id="journey" class="journey-section">
             <div class="timeline">
@@ -255,7 +275,7 @@
         </section>
       </div>
       <div class="sub-journey">
-        <div style="display: flex; background-color: var(--color-secondary); margin-top: 100px;">
+        <div style="display: flex; background-color: var(--color-secondary); margin-top: 50px;">
           <h1> <a style="margin-left: 20px; color: var(--color-primary)">#<a style="padding-left: 0px;">personal-journey</a></a>
           </h1>
           <h1 style="margin-left: 20px; color: var(--color-primary)">─────</h1>
@@ -380,17 +400,14 @@
         </section>
       </div>
     </div>
+
+    <section id="footer" class="footer-section">
+      <p class="marker">© 2025 Jack Le</p>
+    </section>
     
     <!-- <div style="display: flex; flex-direction: row; justify-content: end;">
       <img class="project-img portrait" style="width: 15rem; height: 15rem;" src="assets/portrait-square.png" alt="Portrait">
     </div> -->
-
-    <section id="contact" class="footer-section">
-      <p class="marker">@<a href="https://www.instagram.com/notjackl3/" class="hoverable">my-instagram</a></p>
-      <p class="marker">@<a href="https://www.github.com/notjackl3" class="hoverable">my-github</a></p>
-      <p class="marker">@<a href="https://www.linkedin.com/in/huu-an-duc-le/" class="hoverable">my-linkedin</a></p>
-      <p class="marker">@<a href="mailto:huuanducle@gmail.com" class="hoverable">my-email</a></p>
-    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="animation.css">
