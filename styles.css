@@ -13,6 +13,7 @@
   --color-text: #fff;
   --color-hidden: #888888;
   --color-primary: #C778DD;
+  --color-primary-light: #dba4eb;
   --color-secondary: #252933;
   --color-bg: #282C33;
 
@@ -65,7 +66,11 @@ nav ul li a {
   padding: 4px 0px 8px 8px;
   border-radius: 5px;
 }
-nav ul li .hoverable:hover {
+.hoverable {
+  color: var(--color-hidden);
+  transition: 0.2s ease;
+}
+.hoverable:hover {
   color: #fff;
   background-color: var(--color-secondary);
   padding: 0px;
@@ -82,14 +87,13 @@ nav ul li .hoverable:hover {
 
 .projects-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-  column-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); 
+  column-gap: 2rem;
   row-gap: 2rem;
   padding: 2rem;
   background-color: var(--color-secondary);
   box-sizing: border-box; 
 }
-
 .project {
   border: 1px solid #fff;
   padding: 0;
@@ -97,6 +101,11 @@ nav ul li .hoverable:hover {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  box-shadow: 0 0 7px #C778DD; /* light white glow */
+  transition: box-shadow 0.3s ease;
+}
+.project:hover {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3); /* stronger on hover */
 }
 .project-img-container {
   width: 100%;
@@ -133,8 +142,16 @@ nav ul li .hoverable:hover {
   transition: color 0.3s ease;
 }
 .project-description {
+  font-size: large;
   color: var(--color-hidden);
   transition: color 0.3s ease;
+}
+.project-link {
+  color: var(--color-primary-light);
+  transition: color 0.3s ease;
+}
+.project-link:hover {
+  font-size: large;
 }
 .project:hover .project-title,
 .project:hover .project-description {
@@ -142,46 +159,64 @@ nav ul li .hoverable:hover {
 }
 
 .journey-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #252933;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
+  padding-bottom: 0 !important;
   position: relative;
+}
+.journey {
+  display: flex;
+  flex-direction: row;
 }
 
 .timeline {
   position: relative;
-  padding-left: 2rem;
   max-width: 700px;
 }
-
+/* Reach timeline size limit */
+@media screen and (max-width: 650px) {
+  .timeline {
+    max-width: 95%;
+  }
+  .journey-section {
+    padding: 2rem 1rem;
+  }
+  .journey {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .timeline-item {
   position: relative;
   margin-bottom: 2.5rem;
-  padding-left: 1rem;
 }
-
-.timeline-dot {
-  position: absolute;
-  left: -10px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px #252933;
-}
-
 .timeline-content {
-  color: white;
+  color: var(--color-hidden);
   background-color: #303542;
   padding: 1rem;
   border-left: 2px solid white;
   border-radius: 6px;
 }
-
 .timeline-date {
   font-size: 1.1rem;
+  color: #fff;
+}
+.timeline-date.timeline-project {
+  color: var(--color-primary-light);
+}
+.timeline-subtitle {
+  font-size: 0.8rem;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
-  color: var(--color-hidden);
+}
+
+.important {
+  font-weight: 300;
+  color: #fff;
 }
 
 .read-more {
@@ -191,7 +226,48 @@ nav ul li .hoverable:hover {
   cursor: pointer;
   font-weight: bold;
 }
-
 .read-more:hover {
   text-decoration: underline;
+}
+
+@keyframes flashGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px 5px var(--color-primary);
+    padding: 0.5rem;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px 20px var(--color-primary);
+    padding: 0.5rem;
+    transform: scale(1.1);
+  }
+}
+
+.flash-effect {
+  animation: flashGlow 1.5s ease-out forwards;
+  transition: 0.3s ease;
+}
+
+.flash-effect-reverse {
+  transition: box-shadow 0.5s ease, transform 0.5s ease, padding 0.5s ease-out;
+  box-shadow: none;
+  transform: scale(1);
+  padding: 0.5rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  font-size: large;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  background-color: var(--color-bg);
+}
+.marker {
+  color: var(--color-primary);
 }

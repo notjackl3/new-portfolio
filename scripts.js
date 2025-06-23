@@ -113,3 +113,49 @@ document.querySelectorAll(".read-more").forEach(button => {
     }
   });
 });
+
+function scrollToCenter(event, id) {
+  event.preventDefault();
+  const element = document.getElementById(id);
+
+  if (element) {
+    const elementRect = element.getBoundingClientRect();
+    const absoluteElementTop = window.pageYOffset + elementRect.top;
+    const middleScreenPosition = absoluteElementTop - (window.innerHeight / 2) + (elementRect.height / 2);
+    
+    window.scrollTo({
+      top: middleScreenPosition,
+      behavior: 'smooth'
+    });
+
+    element.classList.add('flash-effect');
+
+    element.addEventListener('animationend', () => {
+      element.classList.remove('flash-effect');
+      element.classList.add('flash-effect-reverse');
+    
+      // remove reverse class after transition
+      element.addEventListener('transitionend', () => {
+        element.classList.remove('flash-effect-reverse');
+        element.style.backgroundColor = '';
+      }, { once: true });
+    }, { once: true });
+  }
+}
+
+function scrollToTop(event, id) {
+  event.preventDefault();
+  const element = document.getElementById(id);
+
+  if (element) {
+    const elementRect = element.getBoundingClientRect();
+    const absoluteElementTop = window.pageYOffset + elementRect.top;
+    const middleScreenPosition = absoluteElementTop - 50;
+    
+    window.scrollTo({
+      top: middleScreenPosition,
+      behavior: 'smooth'
+    });
+  }
+}
+

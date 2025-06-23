@@ -45,17 +45,26 @@ html {
   html {
     font-size: 80%;
   }
+  .button {
+    font-size: 1.5rem;
+  }
 }
 /* Small: 900px */
 @media (max-width: 56.25em) {
   html {
     font-size: 75%;
   }
+  .button {
+    font-size: 1.5rem;
+  }
 }
 /* Handheld: 460px/ 16px = 28.75em */
 @media (max-width: 28.75em) {
   html {
     font-size: 70%;
+  }
+  .button {
+    font-size: 1.5rem;
   }
 }
 /* General styling */
@@ -89,9 +98,6 @@ h2 {
   float: left;
   opacity: 15%;
   line-height: 2.5rem;
-}
-.marker {
-  color: var(--color-primary);
 }
 .select-me {
   font-size: 2rem;
@@ -141,11 +147,20 @@ h2 {
   width: 100%;
   padding-top: 100px;
   display: flex;
-  font-size: 2rem;
+  font-size: 1.5rem;
   justify-content: center;
   align-items: start;
   color: #fcfcff;
   background-color: #252933;
+}
+/* Small phones */
+@media screen and (max-width: 480px) {
+  .welcome-section {
+    height: 85vh;
+  }
+  .welcome-section #intro-text .button {
+    width: 200px;
+  }
 }
 .welcome-section #intro-text {
   align-items: center;
@@ -156,23 +171,18 @@ h2 {
   line-height: 2.8rem;
 }
 .welcome-section #intro-text .button {
+  width: 350px;
   position: relative;
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.3rem 4rem 0.3rem 4rem;
+  padding: 0.5rem 0rem;
   text-align: center;
   color: var(--color-hidden);
-  font-size: 1rem;
   line-height: 2rem;
   border: 2px solid var(--color-hidden);
   border-radius: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-@media screen and (max-width: 768px) {
-  .welcome-section {
-    height: 70vh;
-  }
 }
 .welcome-section #intro-text .button:hover {
   color: #fff;
@@ -182,15 +192,6 @@ h2 {
   position: absolute;
   right: 1.6rem;
   top: 1.45rem;
-}
-.footer-section {
-  font-size: 1rem;
-  padding: 2rem;
-  color: white;
-  text-align: center;
-  background-color: #1b242e;
-  height: 1rem;
-  margin-bottom: 0;
 }
 /* ANIMATIONS \o/ o_ \o | S| |> \O/ / Î› /| I\ â€¾â€¾\ */
 /* Wait until the typewriter is done to reveal button */
