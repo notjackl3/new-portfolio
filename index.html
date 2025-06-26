@@ -141,12 +141,17 @@
             <span class="short-line">───</span>
           </h1>
         </div>
+        
         <section id="journey" class="journey-section">
+            <div style="width: 100%; margin-bottom: 15px;">
+              <h2 style="margin: 0;"><a style="margin-left: 20px; color: var(--color-primary)">*<a style="padding-left: 0px;">2024</a></a></h2>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 class="timeline-date"><i>August, 2024</i> - University Freshman</h3>
-                        <p>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">August</a> - University Freshman</h3>
+                        <p class="timeline-paragraph">
                           I flied to Canada on my 19th birthday. Life in university was full of excitement and unexpected turns. From making new friends to being taken to the hospital
                           <span class="more-text" style="display: none;">
                             after one month here. And from being suspected cheating to forgeting to answer 2 full pages in my final exam. I still ended up with a <b class="important">3.9 CPGA</b>, which is <b class="important">in the Dean's List Scholar</b>.
@@ -154,15 +159,20 @@
                           <button class="read-more">[Read more]</button>
                         </p>
                         <br>
+                      </div>
                     </div>
                 </div>
             </div>
 
+            <div style="width: 100%; margin-bottom: 15px;">
+              <h2 style="margin: 0;"><a style="margin-left: 20px; color: var(--color-primary)">*<a style="padding-left: 0px;">2025</a></a></h2>
+            </div>
             <div class="timeline">
               <div class="timeline-item">
                   <div class="timeline-content">
-                      <h3 class="timeline-date"><i>January, 2025</i> - University Volunteer</h3>
-                      <p>
+                    <div class="timeline-group">
+                      <h3 class="timeline-date"><a class="month">January</a> - University Volunteer</h3>
+                      <p class="timeline-paragraph">
                         After getting used to life in Canada, I volunteered to be a <b class="important">note-taker for 2 courses</b>. I also came to weekly office hours to help other students,
                         <span class="more-text" style="display: none;">
                           and <b class="important">made 507 online contributions</b> in one Computer Science course alone. Each week, I would spend time to <b class="important">mentor my friends in Python</b> for their other coding courses.
@@ -170,9 +180,11 @@
                         <button class="read-more">[Read more]</button>
                       </p>
                       <br><br>
+                    </div>
 
-                      <h3 class="timeline-date"><i>March, 2025</i> - First Hackathon - WallyHacks</h3>
-                      <p>
+                    <div class="timeline-group">
+                      <h3 class="timeline-date"><a class="month">March</a> - First Hackathon - WallyHacks</h3>
+                      <p class="timeline-paragraph">
                         I participated in WallyHacks 2025, a <b class="important">one-day hackathon</b> focused on sustainability in urban environments. Our team, the Red Hats Hackers, <b class="important">won second place!</b>
                         <span class="more-text" style="display: none;">
                           Our project, the <b class="important">Street Roamer S3000</b>, is a sensor-driven prototype that detects flickering streetlights and uneven sidewalks to support real-time urban maintenance, reduce energy waste, and improve safety. We used a <b class="important">photoresistor</b> for flicker detection, a <b class="important">gyroscope</b> to measure tilt and road bumps, and an <b class="important">ultrasonic sensor</b> for obstacle avoidance, all integrated <b class="important">using C++</b>. I contributed by developing and fine-tuning the sensor code, organizing the circuitry, and creating both the <b class="important">presentation slides and final project video</b>.
@@ -180,37 +192,11 @@
                         <button class="read-more">[Read more]</button>
                       </p>
                       <br><br>
-
-                      <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 id="resume-builder" class="timeline-date timeline-project"><i>March, 2025</i> - Resume Builder</h3>
-                            <p class="timeline-subtitle">Python, LaTeX, OpenAI, Jinja, Tkinter, PyQt5, OOP</p>
-                            <p>
-                              I took what I've learnt in class about OOP to create my first personal project. This tool combines both CLI and Tkinter+PyQt5 for the interface, which takes in a resume and a job description, then uses textract to extract keywords.
-                              <span class="more-text" style="display: none;">
-                                These keywords are sent to OpenAI API to produce key bullet points. These sentences are combined with Jinja and LaTeX to then output a newly formatted PDF resume. The new resume ensures keywords are incuded to improve ATS scores. The user may also change the document after if needed. A simple PostgreSQL database is used to store all the resumes and job descriptions locally.
-                              </span>
-                              <button class="read-more">[Read more]</button>
-                            </p>
-                        </div>
-                      </div>
-
-                      <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 id="youtube-as-a-service" class="timeline-date timeline-project"><i>April, 2025</i> - Youtube as a Service 👍</h3>
-                            <p class="timeline-subtitle">Python-Django, HTML/CSS/JS-Tailwind, PostgreSQL, Google Cloud Platform, AWS-S3, OpenCV, Numpy</p>
-                            <p>
-                              I wanted to explore more. I notice Youtube allows users to have unlimited video uploads, thus, I try to find a loophole, which I find out
-                              <span class="more-text" style="display: none;">
-                                that I can convert any files into binary, then match those binary values into specific pixel colors (e.g 00 is red, 01 is blue). These pixel colors are placed into a grid of 480x270 pixels in order. When the grid gets full, it continues onto a new one. These grid images are then compiled into a video with 24 fps. The video finally will be uploaded to Youtube. And users can upload as many video files, thus it allows unlimited storage. I make a decompression algorithm such that we can redownload the video, tune resolutions, and retrieve the bits values. These bits are then recompiled back to the original file, with a 99.9% accuracy!
-                              </span>
-                              <button class="read-more">[Read more]</button>
-                            </p>
-                        </div>
-                      </div>
-
-                      <h3 id="sop-ify" class="timeline-date"><i>May, 2025</i> - First Internship - TRG International</h3>
-                      <p>
+                    </div>
+                      
+                    <div class="timeline-group">
+                      <h3 id="sop-ify" class="timeline-date"><a class="month">May</a> - First Internship - TRG International</h3>
+                      <p class="timeline-paragraph">
                         Going back to Vietnam for summer, I searched for internships. Then I came across TRG and applied in the <b class="important">Standard Operation Procedure Intern</b> position.
                         <span class="more-text" style="display: none;">
                           Despite being in the HR department, I joined with goal to learn soft-skills and understand how a company works. I tried my best to look for further opportunities within my work, which pushes me to <b class="important">represent TRG in 2 career fairs</b>, <b class="important">onboard new interns</b>, and <b class="important">interview incoming interns</b>. Notably, I used my programming skills to <b class="important">create a Python app</b> to simulate git-diff functionality for Word document. This allows me to work more efficient since offline Word document drived me crazy with their version control. Moreover, I <b class="important">developed 2 messaging bots</b> to <b class="important">serve 200+ employees</b>, which directly assisted my HR team in event management. 
@@ -218,23 +204,11 @@
                         <button class="read-more">[Read more]</button>
                       </p>
                       <br><br>
+                    </div>
 
-                      <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 id="job-hunter" class="timeline-date timeline-project"><i>May, 2025</i> - Job Hunter 👍</h3>
-                            <p class="timeline-subtitle">Python-Django, HTML/CSS/JS, PostgreSQL-Supabase, AWS-EC2, NPTK, Jobspy, Beautiful Soup, OpenAI, Matplotlib, Chart.js</p>
-                            <p>
-                              I wanted to avoid being flooded with job posts. This app helps you find the latest jobs by scraping Google, Linkedin, and Indeed based on input queries. 
-                              <span class="more-text" style="display: none;">
-                                It collects and displays the most relevant, high demand technologies, along with other statistics, with addition of natural language processing algorithms. I also use Django's authentication and permission system for access control. There is an option for users to input their resume, and the app will produce a cover letter that matches different jobs immediately. All of the job postings are stored as a PostgreSQL database online via Supabase. The app is then deployed using EC2.
-                              </span>
-                              <button class="read-more">[Read more]</button>
-                            </p>
-                        </div>
-                      </div>
-
-                      <h3 class="timeline-date"><i>May, 2025</i> - Vice President of Technology at UTMSAM</h3>
-                      <p>
+                    <div class="timeline-group">
+                      <h3 class="timeline-date"><a class="month">May</a> - Vice President of Technology at UTMSAM</h3>
+                      <p class="timeline-paragraph">
                         I looked for different clubs in UofT and landed a position as the <b class="important">VP Tech</b>. My role is to <b class="important">lead 4-5 technical associates</b> to <b class="important">host hackathon, workshops, and guest-speaking events</b>. At the same time,
                         <span class="more-text" style="display: none;">
                           I <b class="important">maintain the front-end, back-end</b> of the UTMSAM website and always plan out new improvements. Currently, I am involved on a <b class="important">rebranding campaign</b> and a <b class="important">redesign of the website</b>.
@@ -242,73 +216,140 @@
                         <button class="read-more">[Read more]</button>
                       </p>
                       <br><br>
-
-                      <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 id="organese" class="timeline-date timeline-project"><i>June, 2025</i> - Organese</h3>
-                            <p class="timeline-subtitle">Python-Django, HTML/CSS/JS-Bootstrap, PostgreSQL-Supabase, REST</p>
-                            <p>
-                              I was struggling with time management. So I build a full-stack scheduling web app using Django back-end and vanilla HTML/CSS/JS for front-end.
-                              <span class="more-text" style="display: none;">
-                                This app allows users to create multiple customizable timetables, mark their availability, and share public guest links for others to book meetings. I build RESTful API endpoints to handle CRUD operations. More specifically, this project helps me strengthen my skills in database design, more standardized API practices, and smooth communications between the server and clients.
-                              </span>
-                              <button class="read-more">[Read more]</button>
-                            </p>
-                        </div>
-                      </div>
-
-                      <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 class="timeline-date timeline-project"><i>June, 2025</i> - SOP-ify</h3>
-                            <p class="timeline-subtitle">Python-Flask, python-docx, watchdog</p>
-                            <p>
-                              Version control on Word offline sucks. So I make a Flask application to help me with determining what changes have been made, to assist me with my tasks as a SOP Intern at TRG International.
-                              <span class="more-text" style="display: none;">
-                                I learn about polling techniques which allows me to display changes in real-time, and I use watchdog library to let the app integrate with my OS system, which lets it run in the background as I edit the documents.
-                              </span>
-                              <button class="read-more">[Read more]</button>
-                            </p>
-                        </div>
-                      </div>
-
-                      <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 id="job-hunter" class="timeline-date timeline-project"><i>June, 2025</i> - Portfolio Site</h3>
-                            <p class="timeline-subtitle">HTML/CSS/JS</p>
-                            <p>
-                              I thought it would be cool to create one!
-                            </p>
-                        </div>
-                      </div>
+                    </div>
                   </div>
               </div>
+            </div>
+        </section>
+
+        <div style="display: flex; background-color: var(--color-secondary); margin-top: 0px;">
+          <h1> <a style="margin-left: 20px; color: var(--color-primary)">#<a style="padding-left: 0px;">personal-projects</a></a>
+          </h1>
+          <h1 style="margin-left: 20px; color: var(--color-primary)">
+            <span class="long-line">─────</span>
+            <span class="short-line">───</span>
+          </h1>
+        </div>
+        
+        <section id="journey" class="journey-section">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-group">
+                  <h3 id="resume-builder" class="timeline-date">Resume Builder</h3>
+                  <p class="timeline-subtitle">Python, LaTeX, OpenAI, Jinja, Tkinter, PyQt5, OOP</p>
+                  <p class="timeline-paragraph">
+                    I took what I've learnt in class about OOP to create my first personal project. This tool combines both CLI and Tkinter+PyQt5 for the interface, which takes in a resume and a job description, then uses textract to extract keywords.
+                    <span class="more-text" style="display: none;">
+                      These keywords are sent to OpenAI API to produce key bullet points. These sentences are combined with Jinja and LaTeX to then output a newly formatted PDF resume. The new resume ensures keywords are incuded to improve ATS scores. The user may also change the document after if needed. A simple PostgreSQL database is used to store all the resumes and job descriptions locally.
+                    </span>
+                    <button class="read-more">[Read more]</button>
+                  </p>
+                </div>
               </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-group">
+                  <h3 id="youtube-as-a-service" class="timeline-date">Youtube as a Service 👍</h3>
+                  <p class="timeline-subtitle">Python-Django, HTML/CSS/JS-Tailwind, PostgreSQL, Google Cloud Platform, AWS-S3, OpenCV, Numpy</p>
+                  <p class="timeline-paragraph">
+                    I wanted to explore more. I notice Youtube allows users to have unlimited video uploads, thus, I try to find a loophole, which I find out
+                    <span class="more-text" style="display: none;">
+                      that I can convert any files into binary, then match those binary values into specific pixel colors (e.g 00 is red, 01 is blue). These pixel colors are placed into a grid of 480x270 pixels in order. When the grid gets full, it continues onto a new one. These grid images are then compiled into a video with 24 fps. The video finally will be uploaded to Youtube. And users can upload as many video files, thus it allows unlimited storage. I make a decompression algorithm such that we can redownload the video, tune resolutions, and retrieve the bits values. These bits are then recompiled back to the original file, with a 99.9% accuracy!
+                    </span>
+                    <button class="read-more">[Read more]</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-group">
+                  <h3 id="job-hunter" class="timeline-date">Job Hunter 👍</h3>
+                  <p class="timeline-subtitle">Python-Django, HTML/CSS/JS, PostgreSQL-Supabase, AWS-EC2, NPTK, Jobspy, Beautiful Soup, OpenAI, Matplotlib, Chart.js</p>
+                  <p class="timeline-paragraph">
+                    I wanted to avoid being flooded with job posts. This app helps you find the latest jobs by scraping Google, Linkedin, and Indeed based on input queries. 
+                    <span class="more-text" style="display: none;">
+                      It collects and displays the most relevant, high demand technologies, along with other statistics, with addition of natural language processing algorithms. I also use Django's authentication and permission system for access control. There is an option for users to input their resume, and the app will produce a cover letter that matches different jobs immediately. All of the job postings are stored as a PostgreSQL database online via Supabase. The app is then deployed using EC2.
+                    </span>
+                    <button class="read-more">[Read more]</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-group">
+                  <h3 id="organese" class="timeline-date">Organese</h3>
+                  <p class="timeline-subtitle">Python-Django, HTML/CSS/JS-Bootstrap, PostgreSQL-Supabase, REST</p>
+                  <p class="timeline-paragraph">
+                    I was struggling with time management. So I build a full-stack scheduling web app using Django back-end and vanilla HTML/CSS/JS for front-end.
+                    <span class="more-text" style="display: none;">
+                      This app allows users to create multiple customizable timetables, mark their availability, and share public guest links for others to book meetings. I build RESTful API endpoints to handle CRUD operations. More specifically, this project helps me strengthen my skills in database design, more standardized API practices, and smooth communications between the server and clients.
+                    </span>
+                    <button class="read-more">[Read more]</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-group">
+                  <h3 class="timeline-date">SOP-ify</h3>
+                  <p class="timeline-subtitle">Python-Flask, python-docx, watchdog</p>
+                  <p class="timeline-paragraph">
+                    Version control on Word offline sucks. So I make a Flask application to help me with determining what changes have been made, to assist me with my tasks as a SOP Intern at TRG International.
+                    <span class="more-text" style="display: none;">
+                      I learn about polling techniques which allows me to display changes in real-time, and I use watchdog library to let the app integrate with my OS system, which lets it run in the background as I edit the documents.
+                    </span>
+                    <button class="read-more">[Read more]</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
+
       <div class="sub-journey">
         <div style="display: flex; background-color: var(--color-secondary); margin-top: 50px;">
           <h1> <a style="margin-left: 20px; color: var(--color-primary)">#<a style="padding-left: 0px;">personal-journey</a></a>
           </h1>
           <h1 style="margin-left: 20px; color: var(--color-primary)">─────</h1>
         </div>
+
         <section id="journey" class="journey-section">
+          <div style="width: 100%; margin-bottom: 15px;">
+            <h2 style="margin: 0;"><a style="margin-left: 20px; color: var(--color-primary)">*<a style="padding-left: 0px;">2019</a></a></h2>
+          </div>
             <div class="timeline">
               <div class="timeline-item">
                   <div class="timeline-content">
-                    <h3 class="timeline-date"><i>September, 2019</i> - Portrait Drawing</h3>
-                      <p>
-                        I attended class about <b class="important">pencil portrait drawing</b> and adopted this hobby from then on. I loved to draw movie actors, models, and even abstract drawings. My art can be found in my Instagram: <b class="important">@notjackl3</b>.
-                      </p>
-                      <br>
+                    <div class="timeline-group">
+                      <h3 class="timeline-date"><a class="month">September</a> - Portrait Drawing</h3>
+                        <p class="timeline-paragraph">
+                          I attended class about <b class="important">pencil portrait drawing</b> and adopted this hobby from then on. I loved to draw movie actors, models, and even abstract drawings. My art can be found in my Instagram: <b class="important">@notjackl3</b>.
+                        </p>
+                        <br>
+                    </div>
                   </div>
               </div>
             </div>
 
+            <div style="width: 100%; margin-bottom: 15px;">
+              <h2 style="margin: 0;"><a style="margin-left: 20px; color: var(--color-primary)">*<a style="padding-left: 0px;">2020</a></a></h2>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 class="timeline-date"><i>May, 2020</i> - Content Creation & Video Editing 👍</h3>
-                        <p>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">May</a> - Content Creation & Video Editing 👍</h3>
+                        <p class="timeline-paragraph">
                             I started with <b class="important">editing Minecraft videos on Filmora</b>. In 2021, I took video editing more seriously
                             and started <b class="important">learning Adobe Premiere and After Effects</b>. Finally, it paid off in summer of 2022
                             where one video blew up,
@@ -319,15 +360,20 @@
                             <button class="read-more">[Read more]</button>
                         </p>
                         <br>
+                      </div>
                     </div>
                 </div>
             </div>
 
+            <div style="width: 100%; margin-bottom: 15px;">
+              <h2 style="margin: 0;"><a style="margin-left: 20px; color: var(--color-primary)">*<a style="padding-left: 0px;">2022</a></a></h2>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 class="timeline-date"><i>September, 2022</i> - Vice-President of Create and Care</h3>
-                        <p>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">September</a> - Vice-President of Create and Care</h3>
+                        <p class="timeline-paragraph">
                             I <b class="important">joined a team of 8</b> to teach secondary students how to <b class="important">design clay products, totebags, bracelets</b>, and many more hand-made ideas.
                             <span class="more-text" style="display: none;">
                                 All students really enjoyed the club, some of them even asked me to add friend them on
@@ -337,11 +383,15 @@
                             <button class="read-more">[Read more]</button>
                         </p>
                         <br><br>
-                        <h3 class="timeline-date"><i>October, 2022</i> - BISHCMC Wellbeing Committee Associate</h3>
-                        <p>I took part in the <b class="important">Mental Awareness week</b> and other initiatives regarding student's wellness.</p>
+                      </div>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">October</a> - BISHCMC Wellbeing Committee Associate</h3>
+                        <p class="timeline-paragraph">I took part in the <b class="important">Mental Awareness week</b> and other initiatives regarding student's wellness.</p>
                         <br><br>
-                        <h3 class="timeline-date"><i>November, 2022</i> - Design Technology Ambassador</h3>
-                        <p>
+                      </div>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">November</a> - Design Technology Ambassador</h3>
+                        <p class="timeline-paragraph">
                             I <b class="important">hosted 3 welcoming events</b> for students and parents from up to <b class="important">50+ nationalities</b>. I <b class="important">introduced 150+ guests</b> to the subject through live-actions, presentations, and
                             interactive 3D softwares.
                             <span class="more-text" style="display: none;">
@@ -351,8 +401,10 @@
                             <button class="read-more">[Read more]</button>
                         </p>
                         <br><br>
-                        <h3 class="timeline-date"><i>November, 2022</i> - Academic Mentoring</h3>
-                        <p>
+                      </div>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">November</a> - Academic Mentoring</h3>
+                        <p class="timeline-paragraph">
                             I <b class="important">helped students</b> with their <b class="important">weekly homework</b>.
                             These sessions were hosted by the school and it can reach up to <b class="important">30+ students</b>.
                             <span class="more-text" style="display: none;">
@@ -362,19 +414,26 @@
                             <button class="read-more">[Read more]</button>
                         </p>
                         <br><br>
-                        <h3 class="timeline-date"><i>December, 2022</i> - BISHCMC Prefect Student</h3>
-                        <p>Out of 110 students, 30 was chosen as Prefect Students to <b class="important">be a role model</b> for students in younger
+                      </div>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">December</a> - BISHCMC Prefect Student</h3>
+                        <p class="timeline-paragraph">Out of 110 students, 30 was chosen as Prefect Students to <b class="important">be a role model</b> for students in younger
                             years.</p>
                         <br>
+                      </div>
                     </div>
                 </div>
             </div>
 
+            <div style="width: 100%; margin-bottom: 15px;">
+              <h2 style="margin: 0;"><a style="margin-left: 20px; color: var(--color-primary)">*<a style="padding-left: 0px;">2023</a></a></h2>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 class="timeline-date"><i>February, 2023</i> - Rap Performer 👍</h3>
-                        <p>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">February</a> - Rap Performer 👍</h3>
+                        <p class="timeline-paragraph">
                             My best friend dared me to perform on stage which him, which I did. In total I have <b class="important">performed 5 times</b> on stage, with <b class="important">2000+ audiences</b>.
                             <span class="more-text" style="display: none;">
                               My first rap song is <b class="important">"Com Tam Rap"</b> during Vietnamese Tet Holiday at school. Following that is another rap song <b class="important">"Song Cho Het Doi Thanh Xuan"</b> and <b class="important">dance performance</b> during BISHCMC International Day. Lastly, I performed <b class="important">"Di Ve Nha"</b> with my best friend in the 2024 Tet Holiday, and did 1 solo performance <b class="important">"Lop 13"</b> on my own in that same event.
@@ -382,8 +441,10 @@
                             <button class="read-more">[Read more]</button>
                         </p>
                         <br><br>
-                        <h3 class="timeline-date"><i>September, 2023</i> - President of Design Now</h3>
-                        <p>
+                      </div>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">September</a> - President of Design Now</h3>
+                        <p class="timeline-paragraph">
                             I started my own club with 2 friends. We <b class="important">instructed 20+ students</b> on how to use <b class="important">CAD software</b> such
                             as <b class="important">Fusion360, Adobe Photoshop, Adobe Illustrator</b>, etc.
                             <span class="more-text" style="display: none;">
@@ -392,19 +453,25 @@
                             <button class="read-more">[Read more]</button>
                         </p>
                         <br>
+                      </div>
                     </div>
                 </div>
             </div>
 
+            <div style="width: 100%; margin-bottom: 15px;">
+              <h2 style="margin: 0;"><a style="margin-left: 20px; color: var(--color-primary)">*<a style="padding-left: 0px;">2024</a></a></h2>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 class="timeline-date"><i>June, 2024</i> - Private Tutoring</h3>
-                        <p>
+                      <div class="timeline-group">
+                        <h3 class="timeline-date"><a class="month">June</a> - Private Tutoring</h3>
+                        <p class="timeline-paragraph">
                             I started finding summer jobs and ended up as a <b class="important">private tutor</b>. I <b class="important">taught English to 1 student</b>
                             and <b class="important">Math to 4 students</b>, some were in person and others were online on Preply.
                         </p>
                         <br>
+                      </div>
                     </div>
                 </div>
             </div>
