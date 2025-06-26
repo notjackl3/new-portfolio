@@ -126,6 +126,7 @@ nav ul li a {
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 0 7px #C778DD; /* light white glow */
+  cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
 .project:hover {
@@ -219,7 +220,8 @@ nav ul li a {
   transition: all 0.3s ease;
 }
 .sub-journey:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(219, 164, 235, 0.5);
+  z-index: 99;
   transform: scale(1.02);
 }
 
@@ -328,10 +330,9 @@ nav ul li a {
 }
 
 .flash-effect-reverse {
-  transition: box-shadow 0.5s ease, transform 0.5s ease, padding 0.5s ease-out;
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
   box-shadow: none;
   transform: scale(1);
-  padding: 0.5rem;
 }
 
 .footer-section {
