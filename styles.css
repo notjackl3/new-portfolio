@@ -118,18 +118,19 @@ nav ul li a {
   box-sizing: border-box; 
 }
 .project {
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-hidden);
   padding: 0;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 0 7px #C778DD; /* light white glow */
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
 .project:hover {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.3); /* stronger on hover */
+  box-shadow: 0 0 7px #C778DD;
+  border: 1px solid var(--color-text);
 }
 .project-img-container {
   width: 100%;
@@ -141,7 +142,7 @@ nav ul li a {
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: brightness(40%);
+  filter: brightness(20%);
   transition: filter 0.3s ease;
 }
 .project:hover .project-img {
@@ -150,6 +151,9 @@ nav ul li a {
 .project-divider {
   height: 1px;
   width: 100%;
+  background-color: var(--color-hidden);
+}
+.project-divider:hover {
   background-color: var(--color-text);
 }
 .project-description {

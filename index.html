@@ -35,7 +35,7 @@
             <a style="margin-top: 40px;" class="button intro-wait unselectable" href="#projects" onclick="scrollToTop(event, 'projects')">view my projects</a>
             <a class="button intro-wait unselectable" href="#contact" onclick="scrollToCenter(event, 'contact')">get my contacts</a>
             <a class="button intro-wait unselectable" href="#journey" onclick="scrollToTop(event, 'journey')">see my journey</a>
-            <a class="button intro-wait unselectable" style="color: var(--color-text); border-color: var(--color-text);" href="assets/resume.pdf" download="Jack Le Resume.pdf">check my resume</a>
+            <a class="button intro-wait unselectable" style="color: var(--color-text); border-color: var(--color-text);" href="assets/resume.pdf" download="Jack Le Resume.pdf">-> check my resume <-</a>
             <br>
             <!-- <p style="width: 450px;" class="skills intro-wait unselectable">python, django, flask, java, javascript, html, css, bootstrap, sql, postgresql, supabase, aws, git</p>
             <p class="skills intro-wait unselectable">latex, tailwind, redis, gcp, power app/automate </p> -->
@@ -49,8 +49,7 @@
             <div style="width: 320px; margin-bottom: 10px;">
                 <p style="margin-left: 0; line-height: 1.3; color: var(--color-hidden)"
                     class="skills intro-wait unselectable"><a style="margin-right: 0; color: var(--color-primary-light)"
-                        class="skills intro-wait unselectable">i am good at: </a>nginx, tailwind, redis, google cloud platform, render, openai api, latex, power
-                    app/automate </p>
+                        class="skills intro-wait unselectable">i am good at: </a>nginx, postman, tailwind, redis, google cloud platform, render, openai api, latex, power app/automate </p>
             </div>
         </div>
     </section>
@@ -63,16 +62,25 @@
 
     <section id="projects" class="projects-section">
         <div class="project">            
-            <h2 class="project-title">Organese</h2>
+            <h2 class="project-title" style="color: var(--color-text);">Portfolio Site</h2>
             <div class="project-divider"></div>
             <div class="project-img-container">
-              <img class="project-img" src="assets/projects/organese.png" alt="Organese">
+              <img class="project-img" style="filter: brightness(100%);" src="assets/portfolio.png" alt="Organese">
             </div>
             <div class="project-divider"></div>
-            <p class="project-description">A multi-purpose scheduling app. Users can create personalized timetables, share booking links, and manage their tasks more efficiently.</p>
-            <div style="display: flex; justify-content: center;">
-              <a href="#organese" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'organese')">story behind this</a>
-            </div>
+            <p class="project-description" style="color: var(--color-text);">You are in it right now. 😎</p>
+        </div>
+        <div class="project">            
+          <h2 class="project-title">Organese</h2>
+          <div class="project-divider"></div>
+          <div class="project-img-container">
+            <img class="project-img" src="assets/projects/organese.png" alt="Organese">
+          </div>
+          <div class="project-divider"></div>
+          <p class="project-description">A multi-purpose scheduling app. Users can create personalized timetables, share booking links, and manage their tasks more efficiently.</p>
+          <div style="display: flex; justify-content: center;">
+            <a href="#organese" class="project-link" style="text-align: center; margin-bottom: 15px;" onclick="scrollToCenter(event, 'organese')">story behind this</a>
+          </div>
         </div>
         <div class="project">
             <h2 class="project-title">Job-Hunter</h2>
@@ -478,7 +486,7 @@
         </section>
       </div>
     </div>
-
+    
     <section id="footer" class="footer-section">
       <p class="marker">© 2025 Jack Le</p>
     </section>
