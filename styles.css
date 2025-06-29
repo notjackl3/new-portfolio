@@ -9,7 +9,7 @@
 }
 
 :root {
-  --color-text: #fff;
+  --color-text: rgb(240, 240, 240);
   --color-hidden: #888888;
   --color-primary: #C778DD;
   --color-primary-light: #dba4eb;
