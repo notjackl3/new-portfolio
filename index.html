@@ -22,7 +22,7 @@
       <li> <a style="color: var(--color-primary)">#<a class="hoverable" href="#journey"
             onclick="scrollToTop(event, 'journey')" style="padding-left: 0px;">my-journey</a></a> </li>
       <li> <a style="color: var(--color-primary)">#<a class="hoverable" href="assets/resume.pdf"
-            download="Jack Le Resume.pdf" style="padding-left: 0px;">my-resume</a></a> </li>
+            download="Jack-Le-Resume.pdf" style="padding-left: 0px;">my-resume</a></a> </li>
     </ul>
     <div class="hamburger">
       <span class="line"></span>
@@ -45,14 +45,12 @@
       <a class="button intro-wait unselectable" style="color: var(--color-text); border-color: var(--color-text);" href="assets/resume.pdf" download="Jack Le Resume.pdf">-> check my resume <-</a>
           <br>
           <div style="width: 320px; margin-bottom: 10px;">
-            <p style="margin-left: 0; line-height: 1.5;" class="skills intro-wait unselectable"><a style="margin-right: 0; color: var(--color-primary)" class="skills intro-wait unselectable">i am best at: </a>python, django, flask, java, javascript, html, css, bootstrap, sql, postgresql,
-              supabase, git, aws (ec2,s3,cloudfront,route53,lambda,rds)</p>
+            <p style="margin-left: 0; line-height: 1.5;" class="skills intro-wait unselectable"><a style="margin-right: 0; color: var(--color-primary)" class="skills intro-wait unselectable">i am best at: </a>python, django, flask, java, javascript, html, css, bootstrap, sql, postgresql, supabase, git, aws (iam, ec2, s3, cloudfront, lambda, dynamodb, eventbridge)</p>
           </div>
           <div style="width: 320px; margin-bottom: 10px;">
             <p style="margin-left: 0; line-height: 1.3; color: var(--color-hidden)"
               class="skills intro-wait unselectable"><a style="margin-right: 0; color: var(--color-primary-light)"
-                class="skills intro-wait unselectable">i am good at: </a>nginx, postman, tailwind, redis, google cloud
-              platform, render, openai api, latex, power app/automate </p>
+                class="skills intro-wait unselectable">i am good at: </a>nginx, postman, tailwind, google cloud platform, render, openai api, latex, power app/automate </p>
           </div>
     </div>
   </section>
@@ -310,16 +308,15 @@
             <div class="timeline-content">
               <div class="timeline-group">
                 <h3 id="organese" class="timeline-date">Image Gallery</h3>
-                <p class="timeline-subtitle">Python-FastAPI, AWS-EC2-S3-CloudFront-Lambda, REST</p>
+                <p class="timeline-subtitle">Python-FastAPI, AWS-EC2-S3-CloudFront-EventBridge-Lambda-DynamoDB, nginx</p>
                 <p class="timeline-paragraph">
                   I was curious cloud infrastructure. So I build a simple but powerful image gallery web app using
                   FastAPI. The app allows users to join galleries, upload images, and view or delete existing images in
                   real-time.
                   <span class="more-text" style="display: none;">
                     I store all images in Amazon S3, serve them globally through CloudFront CDN for faster load times,
-                    and deploy it using an EC2 instance configured with NGINX. There is also a client-side image
-                    compression using the Canvas API. This project helps me understand RESTful API design, cloud
-                    deployment workflows, and performance optimization with caching and compression.
+                    and deploy it using an EC2 instance configured with nginx. There is also a client-side image
+                    compression using the Canvas API. Additionally, I set up a daily image cleanup process using AWS Lambda and DynamoDB, which automatically removes expired images to keep the storage efficient and organized. This project helps me understand RESTful API design, cloud deployment workflows, and performance optimization with caching and compression.
                   </span>
                   <button class="read-more">[Read more]</button>
                 </p>

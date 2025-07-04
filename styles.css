@@ -266,7 +266,7 @@ nav ul li a {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 0.2s ease-out, max-height 0.2s ease-out;
+  transition: opacity 0.1s ease-in, max-height 0.1s ease-in;
 }
 
 .timeline-group:hover .timeline-paragraph {
