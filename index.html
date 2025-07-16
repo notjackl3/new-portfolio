@@ -50,7 +50,7 @@
           <div style="width: 320px; margin-bottom: 10px;">
             <p style="margin-left: 0; line-height: 1.3; color: var(--color-hidden)"
               class="skills intro-wait unselectable"><a style="margin-right: 0; color: var(--color-primary-light)"
-                class="skills intro-wait unselectable">i am good at: </a>nginx, postman, tailwind, google cloud platform, render, openai api, latex, power app/automate </p>
+                class="skills intro-wait unselectable">i am good at: </a>nginx, postman, tailwind, google cloud platform, render, mapbox, openai api, latex, power app/automate </p>
           </div>
     </div>
   </section>
@@ -63,19 +63,34 @@
 
   <section id="projects" class="projects-section">
     <div class="project">
+      <h2 class="project-title">UTM Live</h2>
+      <div class="project-divider"></div>
+      <div class="project-img-container">
+        <img class="project-img" src="assets/projects/utm-live.png" alt="UTM-Live">
+      </div>
+      <div class="project-divider"></div>
+      <p class="project-description">An interactive, 3D map. Users, specifically UTM students can find the perfect study spots around campus!</p>
+      <div style="display: flex; justify-content: center;">
+        <a href="#utm-live" class="project-link" style="text-align: center; margin-bottom: 15px;"
+          onclick="scrollToCenter(event, 'utm-live')">story behind this</a>
+      </div>
+    </div>
+
+    <div class="project">
       <h2 class="project-title">Image Gallery</h2>
       <div class="project-divider"></div>
       <div class="project-img-container">
         <img class="project-img" src="assets/projects/image-gallery.png" alt="Organese">
       </div>
       <div class="project-divider"></div>
-      <p class="project-description">A quick image gallery app. Users choose a gallery and upload images (publicly) onto
+      <p class="project-description">A fast image gallery app. Users choose a gallery and upload images (publicly) onto
         it. Others can upload new images or download existing ones.</p>
       <div style="display: flex; justify-content: center;">
         <a href="#image-gallery" class="project-link" style="text-align: center; margin-bottom: 15px;"
-          onclick="scrollToCenter(event, 'organese')">story behind this</a>
+          onclick="scrollToCenter(event, 'image-gallery')">story behind this</a>
       </div>
     </div>
+
     <div class="project">
       <h2 class="project-title" style="color: var(--color-text);">Portfolio Site</h2>
       <div class="project-divider"></div>
@@ -99,6 +114,7 @@
           onclick="scrollToCenter(event, 'organese')">story behind this</a>
       </div>
     </div>
+
     <div class="project">
       <h2 class="project-title">Job-Hunter</h2>
       <div class="project-divider"></div>
@@ -113,6 +129,7 @@
           onclick="scrollToCenter(event, 'job-hunter')">story behind this</a>
       </div>
     </div>
+
     <div class="project">
       <h2 class="project-title">SOP-ify</h2>
       <div class="project-divider"></div>
@@ -127,6 +144,7 @@
           onclick="scrollToCenter(event, 'sop-ify')">story behind this</a>
       </div>
     </div>
+
     <div class="project">
       <h2 class="project-title">Youtube as a Service</h2>
       <div class="project-divider"></div>
@@ -141,6 +159,7 @@
           onclick="scrollToCenter(event, 'youtube-as-a-service')">story behind this</a>
       </div>
     </div>
+
     <div class="project">
       <h2 class="project-title">Resume Builder</h2>
       <div class="project-divider"></div>
@@ -303,6 +322,23 @@
 
       <section id="journey" class="journey-section">
         <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-group">
+                <h3 id="utm-live" class="timeline-date">UTM Live</h3>
+                <p class="timeline-subtitle">Python-Django, Mapbox-GL-Studio, AWS-S3, PostgreSQL-Supabase</p>
+                <p class="timeline-paragraph">
+                  I was wondering how many study spots are there at UTM, and whether there is a list of these places out there. But there is none! Thus, I wanted to created an app that allows students to view all of the study spots. I also thought it would be cool to make the map 3D!
+                  <span class="more-text" style="display: none;">
+                    At the moment, I am still working on it, so stay tune! I have finished with the dynamic movements, am currently working on preparing the dataset for all of the spots, and also fix minor glitches.
+                  </span>
+                  <button class="read-more">[Read more]</button>
+                </p>
+              </div>
+            </div>
+          </div>
+
 
           <div class="timeline-item">
             <div class="timeline-content">
@@ -485,6 +521,18 @@
                     Students asked for our help to <b class="important">produce 3D printed acrylic</b> products. Some
                     others wanted to <b class="important">design with plywood</b> (one student chose to make a real-size
                     knife!)
+                  </span>
+                  <button class="read-more">[Read more]</button>
+                </p>
+                <br><br>
+              </div>
+
+              <div class="timeline-group">
+                <h3 class="timeline-date"><a class="month">June</a> - Product Designer - SAGE Competition</h3>
+                <p class="timeline-paragraph">
+                  I collaborated with a team of five to develop a social enterprise start-up focused on <b class="important">creating special braille books</b>, and <b class="important">won 3rd place!</b>
+                  <span class="more-text" style="display: none;">
+                    Our product combined <b class="important">textured materials</b> with a built-in <b class="important">digital voice-over</b>, offering visually impaired users both a physical and auditory reading experience. I played a key role in shaping our business model, coming up with potential designs, and conducting market research to ensure the product’s relevance and impact.
                   </span>
                   <button class="read-more">[Read more]</button>
                 </p>
