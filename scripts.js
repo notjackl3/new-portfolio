@@ -133,7 +133,7 @@ function scrollToTop(event, id) {
   if (element) {
     const elementRect = element.getBoundingClientRect();
     const absoluteElementTop = window.pageYOffset + elementRect.top;
-    const middleScreenPosition = absoluteElementTop - 50;
+    const middleScreenPosition = absoluteElementTop - 100;
     
     window.scrollTo({
       top: middleScreenPosition,
