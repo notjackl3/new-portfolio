@@ -141,3 +141,33 @@ function scrollToTop(event, id) {
     });
   }
 }
+
+
+const slider = document.getElementById('slider');
+  const track = document.getElementById('track');
+
+  // Duplicate items for infinite scroll
+  track.innerHTML += track.innerHTML;
+
+  let scrollAmount = 0;
+  const speed = 1; // pixels per frame
+  let animationFrame; // keep track of current animation
+
+  function slide() {
+    scrollAmount += speed;
+    if (scrollAmount >= track.scrollWidth / 2) {
+      scrollAmount = 0; // loop back seamlessly
+    }
+    track.style.transform = `translateX(${-scrollAmount}px)`;
+    animationFrame = requestAnimationFrame(slide);
+  }
+
+  // Start animation
+  slide();
+
+  // Pause on hover
+  slider.addEventListener('mouseenter', () => cancelAnimationFrame(animationFrame));
+  slider.addEventListener('mouseleave', () => {
+    cancelAnimationFrame(animationFrame); // cancel any previous frame before starting new
+    slide();
+  });

@@ -336,10 +336,10 @@ nav ul li a {
   transition: 0.3s ease;
 }
 
-.footer-section.flash-effect {
+/* .footer-section.flash-effect {
   animation: flashGlowNoPadding 1.5s ease-out forwards;
   transition: 0.3s ease;
-}
+} */
 
 .flash-effect-reverse {
   transition: box-shadow 0.5s ease, transform 0.5s ease;
@@ -353,7 +353,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 50px;
   font-size: large;
   text-align: center;
   padding: 2rem;
@@ -361,10 +361,53 @@ nav ul li a {
   background-color: var(--color-bg);
   transition: 0.3s ease;
 }
-.footer-section:hover {
+/* .footer-section:hover {
   box-shadow: 0 0 30px 0px var(--color-primary-light);
-}
+} */
 
 .marker {
   color: var(--color-primary);
+}
+
+
+.slider-container {
+  width: 100%;
+  margin-top: 150px;
+  overflow: hidden;
+  border-top: 1px solid var(--color-primary);
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.slider-item {
+  flex-shrink: 0;
+  width: 300px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.slider-item video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.subtitle {
+  padding: 0 7px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: var(--color-text);
 }
