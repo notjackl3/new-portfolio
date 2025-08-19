@@ -9,29 +9,36 @@
 }
 
 :root {
+  --font-inter: "Inter";
+}
+
+#intro-text {
+  color: var(--color-text);
+}
+
+body {
   --color-text: rgb(240, 240, 240);
   --color-hidden: #888888;
   --color-primary: #C778DD;
   --color-primary-light: #dba4eb;
   --color-secondary: #252933;
   --color-bg: #282C33;
-
-  --font-inter: "Inter";
+  --color-timeline-bg: #303542;
+  --blur: 5px;
+  --fil: 20%;
+  background-color: var(--color-secondary);
 }
 
-/* :root {
-  --color-text: #000;
-  --color-hidden: #888888;
-  --color-primary: #4169e1;
-  --color-primary-light: #5b7de3;
-  --color-secondary: #e8e8e8;
-  --color-bg: #fff;
-
-  --font-inter: "Inter";
-} */
-
-body {
-  background-color: var(--color-secondary);
+.dark-theme {
+  --color-text: rgb(77, 77, 77); 
+  --color-hidden: #555555;
+  --color-primary: #7C4DFF; 
+  --color-primary-light: #9C6BFF;
+  --color-secondary: #f5f5f5; 
+  --color-bg: #ffffff;
+  --color-timeline-bg: #ebebeb;
+  --blur: 10px;
+  --fil: 100%;
 }
 
 nav {
@@ -43,8 +50,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-bg);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 0px 20px -1px,
+  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   z-index: 1;
 }
 nav .logo {
@@ -79,6 +86,32 @@ nav ul li a {
   padding: 4px 0px 8px 8px;
   border-radius: 5px;
 }
+nav .theme-toggle {
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 30px;
+  transform: translateX(-50%);
+}
+
+#theme-toggle-button {
+  background-color: var(--color-bg);
+  border: 0;
+  padding: 5px 15px;
+  border-radius: 0 15px 15px 0;
+  color: var(--color-primary);
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 0px 20px -1px,
+  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#theme-toggle-button:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-bg); /* Button text changes to background color */
+}
+
 .hoverable {
   color: var(--color-hidden);
   transition: 0.2s ease;
@@ -122,6 +155,11 @@ nav ul li a {
   cursor: pointer;
 }
 
+#contact {
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 5px 20px -1px,
+  rgba(0, 0, 0, 0) 0px 1px 3px -1px;
+}
+
 .projects-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); 
@@ -143,7 +181,7 @@ nav ul li a {
 }
 .project:hover {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.3); /* stronger on hover */
-  box-shadow: 0 0 7px #C778DD;
+  box-shadow: 0 0 7px var(--color-primary);
   border: 1px solid var(--color-text);
 }
 .project-img-container {
@@ -156,11 +194,12 @@ nav ul li a {
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: brightness(20%);
-  transition: filter 0.3s ease;
+  filter: brightness(var(--fil)) blur(var(--blur));
+  transition: filter 0.2s ease;
 }
 .project:hover .project-img {
-  filter: brightness(100%);
+  filter: brightness(100%) blur(0px);
+
 }
 .project-divider {
   height: 1px;
@@ -259,10 +298,10 @@ nav ul li a {
 }
 .timeline-content {
   color: var(--color-hidden);
-  background-color: #303542;
+  background-color: var(--color-timeline-bg);
   cursor:default;
   padding: 1rem;
-  border-left: 2px solid white;
+  border-left: 2px solid var(--color-text);
   border-radius: 6px;
 }
 .timeline-paragraph {
@@ -357,8 +396,8 @@ nav ul li a {
   font-size: large;
   text-align: center;
   padding: 2rem;
-  color: white;
-  background-color: var(--color-bg);
+  color: var(--color-text);
+  background-color: var(--color-timeline-bg);
   transition: 0.3s ease;
 }
 /* .footer-section:hover {
@@ -374,8 +413,11 @@ nav ul li a {
   width: 100%;
   margin-top: 150px;
   overflow: hidden;
-  border-top: 1px solid var(--color-primary);
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-hidden);
   position: relative;
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 5px 20px -1px,
+  rgba(0, 0, 0, 0) 0px 1px 3px -1px;
 }
 
 .slider-track {

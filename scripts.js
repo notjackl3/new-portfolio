@@ -1,3 +1,25 @@
+const themeToggleButton = document.getElementById('theme-toggle-button');
+const body = document.body;
+
+// Check localStorage for theme preference on load
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-theme');
+} else {
+  body.classList.remove('dark-theme');
+}
+
+themeToggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-theme');
+
+  // Save user preference to localStorage
+  if (body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+
 const mobileNav = document.querySelector(".hamburger");
 const navbar = document.querySelector(".menubar");
 
